@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id='forma'>
+        <input id="int1" placeholder="число"/>
+        <input id="what_do" placeholder="действие"/>
+        <input id="int3" placeholder="число"/>
+    </form>
+    <button onclick='adshba()'>получить ответ</button>
+
+    <script>
+        function adshba(){
+        if(document.forms["forma"].elements["what_do"].value == '+'){
+            let one = document.forms["forma"].elements["int1"].value;
+            let two = document.forms["forma"].elements["int3"].value;
+            alert(Number(one)+Number(two));
+        }
+        else if(document.forms["forma"].elements["what_do"].value == '-'){
+            let one = document.forms["forma"].elements["int1"].value;
+            let two = document.forms["forma"].elements["int3"].value;
+            alert(Number(one)-Number(two));
+        }
+        else if(document.forms["forma"].elements["what_do"].value == '*'){
+            let one = document.forms["forma"].elements["int1"].value;
+            let two = document.forms["forma"].elements["int3"].value;
+            alert(Number(one)*Number(two));
+        }
+        else if(document.forms["forma"].elements["what_do"].value == '/'){
+            let one = document.forms["forma"].elements["int1"].value;
+            let two = document.forms["forma"].elements["int3"].value;
+            alert(Number(one)/Number(two));
+        }
+    }
+    
+    </script> 
+    
+
+</body>
+</html>
